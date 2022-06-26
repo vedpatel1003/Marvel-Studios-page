@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="style.css">
+<div class="wrapper run-animation" id="animate">
+    <div class="logo">
+        <span class="Marvel"></span>
+        <span class="Studios"></span>
+
+        <div class="restart">Restart</div>
+    </div>
+</div>
+<div class="images"></div>
+<script>
+    element = document.getElementById("animate");
+if (element) {
+	element.addEventListener(
+		"click",
+		function (e) {
+			e.preventDefault;
+			console.log("element", element.classList);
+			element.classList.remove("run-animation");
+			void element.offsetWidth;
+			element.classList.add("run-animation");
+		},
+		false
+	);
+}
+</script>
